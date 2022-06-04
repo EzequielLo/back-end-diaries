@@ -14,7 +14,6 @@ dotenv.config();
 /**
  * App Variables
  */
-
 if (!process.env.PORT) {
   process.exit(1);
 }
@@ -26,7 +25,6 @@ const app = express();
 /**
  *  App Configuration
  */
-
 app.use(helmet());
 app.use(cors());
 app.use(express.json());

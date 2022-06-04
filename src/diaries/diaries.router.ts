@@ -61,7 +61,6 @@ router.delete("/:id", async (req, res) => {
     const id = req?.params?.id
     const query = { _id: new ObjectId(id) };
     await DiaryService.remove(query);
-
     res.sendStatus(204);
   } catch (e: any) {
     res.status(500).send(e.message);
